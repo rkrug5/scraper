@@ -1,3 +1,8 @@
 .container-fluid {
 	background-color:black;
+	color:rgb(0, 255, 0)
+}
+
+.jumbotron{
+	color:black;
 }
