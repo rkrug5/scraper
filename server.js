@@ -34,7 +34,7 @@ app.use(express.static("public"));
 
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/farkScraper", function (err) {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/farkScraper", function (err) {
 	console.log(err || 'CONNECTED!');
 });
 
