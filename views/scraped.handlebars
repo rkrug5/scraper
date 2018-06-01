@@ -5,7 +5,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="jumbotron">
-			<h1 class="display-4">Mongo DB scraper!</h1>
+			<h1 class="display-4">Headlines have been scraped!</h1>
 			<p class="lead">This site scrapes Fark.com/politics of its headlines and presents them with a link to the original article. Please leave a note if you have
 				something to say about any of them. </p>
 			<hr class="my-4">
@@ -13,16 +13,11 @@
 			<div id="articles"></div>
 			<div id="notes"></div>
 			<p class="lead">
-				<a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape It!</a>
+				<a class="btn btn-primary btn-lg" href="/" role="button">Return to main page!</a>
 			</p>
-			<a class="btn btn-primary btn-lg" href="#" role="button">Leave a Note!</a>
+			{{!--
+			<a class="btn btn-primary btn-lg" href="#" role="button">Leave a Note!</a> --}}
 		</div>
-		{{#each articles}}
 
-		<h3>{{title}}</h3>
-		<h5>
-			<a href="{{link}}">link</a>
-		</h5>
-		{{/each}}
 	</div>
 </body>
