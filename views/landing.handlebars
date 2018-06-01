@@ -2,18 +2,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
  crossorigin="anonymous">
 
-
 <body>
 	<div class="container-fluid">
-
-
-
-
-
-
-
-
-
 		<div class="jumbotron">
 			<h1 class="display-4">working handlebars!</h1>
 			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -25,18 +15,13 @@
 				<a class="btn btn-primary btn-lg" href="#" role="button">Scrape It!</a>
 			</p>
 			<a class="btn btn-primary btn-lg" href="#" role="button">Leave a Note!</a>
-
 		</div>
+		{{#each articles}}
 
-
-
-
-
-
-
-
-
-
+		<h3>{{title}}</h3>
+		<p>
+			<a href="{{link}}">link</a>
+		</p>
+		{{/each}}
 	</div>
-
 </body>
